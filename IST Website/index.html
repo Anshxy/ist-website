@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Improvements: Page structure could be better, Create multi page, Create basic chat bot. -->
+  
+<!-- Popup -->
+
+<div id="myModal" class="modal" style="display:none;">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Sign In</h1>
+    <form id="login-form">
+      
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+      <br>
+      <br>
+      <a href="signup.html" style="color:white;">New member? Create an account!</a>
+    </form>
+    
+    </main>
+  </div>
+
+</div>
+
+    <!-- Header -->
+<div class="header">
+  <div class="header-text">
+    <h1 style="font-size:50px; text-decoration: underline;">Traveler</h1>
+    <p>Spend less time worrying and more time traveling!</p>
+  </div>
+</div>
+
+
+<!-- Nav Bar (Hidden) -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+  <a href="flights.html"><i class="fa fa-plane" aria-hidden="true"></i></a>
+  <a onclick="usr()"><i class="fa fa-address-book" aria-hidden="true"></i></a>
+  <a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i></a>
+</div>
+
+<!-- Negative Alert (Hidden) -->
+<div class="alert-n" id="alert-negative" style="display:none;">
+  <span class="closebtn-alert" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Incorrect username or password</strong>
+</div>
+
+<!-- Positive Alert (Hidden) -->
+<div class="alert-p" id="alert-positive" style="display:none;">
+  <span class="closebtn-alert" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Login Successful</strong>
+</div>
+
+  <!-- Page content -->
+<div class="page-content" id="main"> 
+
+  <!-- Nav popup -->
+  <button class="openbtn" onclick="openNav()">☰</button> 
+
+    <h1 class="sub-header">Japan</h1>
+    <img class="src-img" src="assets/japan2.jpeg" width="400" height="300">
+    <p class="texter">Japan is considered to be one of the safest countries<br> in the world, and has one of the lowest global crime<br> rates. Japanese people often leave their doors unlocked,<br> children are perfectly safe traveling on the subway by<br> themselves, and visitors are able to walk around the cities<br> at night without having to worry... <em style="font-size:15px" 10px}><a href="/">(Read more)</a></em></p>
+
+
+    <h1 class="sub-header2">Dubai</h1>
+    <img class="src-img" src="assets/dubai.jpeg" width="400" height="300">
+    <p class="texter">Beautiful, shiny skyscrapers, state of the art buildings and beautiful<br> beaches and sand dunes; fine dining; fabulous all-inclusive<br> accommodation options, shopping at Dubai Mall and adrenaline filled<br> experiences all make Dubai a fantastic tourist destination...<em style="font-size:15px" 10px}><a href="/">(Read more)</a></em></p>
+
+    <h1 class="sub-header3">Paris</h1>
+    <img class="src-img" src="assets/paris.jpeg" width="400" height="300">
+    <p class="texter">With a abundance of landmarks, museums and cathedrals<br> to visit, from the iconic Eiffel Tower, to the gothic Notre<br> Dame to the Louvre and gardens galore, few places do<br> landmarks quite so well as the city of love... <em style="font-size:15px" 10px}><a href="/">(Read more)</a></em></p>
+
+</div>
+
+
+
+
+  <footer><a href="/">Terms and conditions</a></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="scripts/info.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/login.js"></script>
+
+</body>
+</html>
